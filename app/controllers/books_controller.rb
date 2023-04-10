@@ -19,6 +19,9 @@ class BooksController < ApplicationController
   def edit
   end
   
+  def destroy
+  end
+  
   private
   def book_params
     parames.require(:book).permit(title, body)
